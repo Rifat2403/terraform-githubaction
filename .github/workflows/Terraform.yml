@@ -25,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev 
 
-      defaults:
-         run:
+    defaults:
+       run:
            shell: bash
  
     # Steps represent a sequence of tasks that will be executed as part of the job
