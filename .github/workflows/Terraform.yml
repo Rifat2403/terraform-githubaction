@@ -38,6 +38,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'fmt'
         tf_action_working_dir: "./terraform"
+    
         
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-action@master
