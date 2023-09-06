@@ -38,6 +38,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'fmt'
         tf_action_working_dir: "./terraform"
+        run: 'terraform fmt'
     
         
     - name: 'Terraform Init'
@@ -46,6 +47,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'init'
         tf_action_working_dir: "./terraform"
+        run: 'terraform init'
         
     - name: 'Terraform Validate'
       uses: hashicorp/terraform-github-action@master
@@ -53,6 +55,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'validate'
         tf_action_working_dir: "./terraform"
+        run: 'terraform validate'
         
     - name: 'Terraform Plan'
       uses: hashicorp/terraform-github-action@master
@@ -60,6 +63,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'plan'
         tf_action_working_dir: "./terraform"
+        run: 'terraform plan'
         
     - name: 'Terraform Apply'
       if: github.ref == 'ref/heads/main'
@@ -68,6 +72,7 @@ jobs:
         tf_action_version: 0.14.8
         tf_action_subcommand: 'apply'
         tf_action_working_dir: "./terraform"
+        run: 'terraform apply'
    
     
 
